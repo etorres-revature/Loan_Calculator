@@ -1,8 +1,18 @@
 //Listen for submit
 
-$("#loan-form").on("submit", function calculateResults() {
-  //Calculate Results
+$("#loan-form").on("submit", function () {
   event.preventDefault();
+  //hide results
+  $("#results").css("display", "none");
+
+  //Show loader gif
+  $("#loading").css("display", "block");
+
+  setTimeout(calculateResults, 2500);
+});
+
+function calculateResults() {
+  //Calculate Results
   console.log("Calculating...");
 
   //UI variables
@@ -25,21 +35,28 @@ $("#loan-form").on("submit", function calculateResults() {
     monthlyPaymentEl.val(monthly.toFixed(2));
     totalPaymentEl.val((monthly * calculatedPayments).toFixed(2));
     totalInterestEl.val((monthly * calculatedPayments - principal).toFixed(2));
+    //show results
+    $("#results").css("display", "block");
+    //hide calculating gif
+    $("#loading").css("display", "none");
   } else {
     showError("Please check your numbers");
   }
-});
+}
 
 function showError(error) {
-
-    //locate where to put the error message
-    errorDiv = $(".card")
-    //create error message
-    errorDiv.prepend(`<div class='alert alert-danger'>${error}</div>`)
-    //clear error message after 3 seconds
-    setTimeout(clearError, 3000)
+  //hide results
+  $("#results").css("display", "none");
+  //hide calculating gif
+  $("#loading").css("display", "none");
+  //locate where to put the error message
+  errorDiv = $(".card");
+  //create error message
+  errorDiv.prepend(`<div class='alert alert-danger'>${error}</div>`);
+  //clear error message after 3 seconds
+  setTimeout(clearError, 3000);
 }
 
 function clearError() {
-    $(".alert").remove();
+  $(".alert").remove();
 }
