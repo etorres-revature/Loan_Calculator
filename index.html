@@ -10,10 +10,70 @@
     <!-- <link rel="icon" type="image/png" href"#"/>-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body class="bg-dark">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="https://stardewvalley.net" target="_blank" rel="noopener noreferrer">Eric D.
+            Torres</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="ml-auto">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item active ml-auto">
+                        <a class="nav-link" href="https://etorres-revature.github.io/Work_Day_Scheduler/">Day
+                            Planner<span class="sr-only">Day Planner</span></a>
+                    </li>
+                    <li class="nav-item active ml-auto">
+                        <a class="nav-link" href="https://etorres-revature.github.io/To_Do-Local_Storage/">Task
+                            List<span class="sr-only">Task List</span></a>
+                    </li>
+                    <li class="nav-item active ml-auto">
+                        <a class="nav-link" href="https://etorres-revature.github.io/New_York_Times_API_Search/">Search
+                            NY Times<span class="sr-only">Search NY Times</span></a>
+                    </li>
+                    <li class="nav-item active ml-auto">
+                        <a class="nav-link" href="https://etorres-revature.github.io/Password_Generator/">Password
+                            Generator
+                            <span class="sr-only">Password Generator</span></a>
+                    </li>
+                    <li class="nav-item active ml-auto">
+                        <a class="nav-link" href="https://etorres-revature.github.io/JavaScript_Code_Quiz_Challenge/">JS
+                            Code Quiz<span class="sr-only">JS Code Quiz</span></a>
+                    </li>
+                    <li class="nav-item dropdown ml-auto">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Responsive Portfolio:
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item"
+                                href="https://etorres-revature.github.io/Responsive_Portfolio/">Home Page</a>
+                            <a class="dropdown-item"
+                                href="https://etorres-revature.github.io/Responsive_Portfolio/about_me.html">About
+                                Me</a>
+                            <a class="dropdown-item"
+                                href="https://etorres-revature.github.io/Responsive_Portfolio/portfolio.html">Portfolio</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item"
+                                href="https://etorres-revature.github.io/Responsive_Portfolio/contact.html">Contact</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- <form class="form-inline my-2 my-lg-0"> -->
+            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+            <!-- </form> -->
+        </div>
+    </nav>
 
     <div class="container">
         <div class="row">
@@ -45,7 +105,7 @@
                     <!-- LOADER HERE -->
 
                     <div id="loading">
-                        <img src="img/loading.gif" alt="loading gif"/>
+                        <img src="img/loading.gif" alt="loading gif" />
                     </div>
 
                     <!-- RESULTS -->
@@ -77,6 +137,52 @@
         </div>
     </div>
 
+    <div id="spacer"></div>
+
+    <footer
+    class="clearfix sticky-footer"
+    style="display: contents; border-color: black; background-color: grey"
+  >
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col">
+          <h3 id="social-media-header">Visit me on social media:</h3>
+        </div>
+      </div>
+      <!-- footer social media classes and styling from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+      <div class="row">
+        <div class="col" id="social-media">
+          <a
+            href="https://www.linkedin.com/in/ericdtorres/"
+            class="fa fa-linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
+          <a
+            href="https://github.com/etorres-revature"
+            class="fa fa-github"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p id="e_mail">
+            E-mail:
+            <a href="mailto:etorresnotary@gmail.com"
+              >etorresnotary@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p id="copyright">&copy; 2020 Eric D. Torres Productions</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>

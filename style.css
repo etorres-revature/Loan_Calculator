@@ -1,3 +1,53 @@
-#loading, #results {
-    display: none;
+#loading,
+#results {
+  display: none;
+}
+
+#spacer {
+    height: 85px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.65;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  margin-right: 5px;
+}
+
+.fa-github {
+  background: #2c4762;
+  color: white;
+  margin-left: 5px;
+}
+
+#copyright {
+  text-align: center;
+  color: wheat;
+}
+
+#social-media-header {
+  color: wheat;
+}
+
+#social-media {
+  text-align: center;
+}
+
+h2.current-city {
+  text-align: center;
+}
+
+#e_mail {
+  color: wheat;
+  text-align: center;
 }
